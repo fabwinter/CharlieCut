@@ -1,4 +1,4 @@
-# OpenCut Desktop
+# CharlieCut Desktop
 
 Built with [GPUI](https://www.gpui.rs).
 
