@@ -18,7 +18,7 @@ impl Render for Root {
             .items_center()
             .bg(rgb(0x111111))
             .text_color(rgb(0xffffff))
-            .child(div().text_xl().child("OpenCut"))
+            .child(div().text_xl().child("CharlieCut"))
             .child(
                 div()
                     .text_sm()
@@ -34,7 +34,7 @@ fn main() {
         cx.open_window(
             WindowOptions {
                 titlebar: Some(TitlebarOptions {
-                    title: Some(SharedString::from("OpenCut")),
+                    title: Some(SharedString::from("CharlieCut")),
                     ..Default::default()
                 }),
                 window_bounds: Some(WindowBounds::Windowed(bounds)),
