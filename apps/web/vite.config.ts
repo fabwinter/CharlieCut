@@ -11,7 +11,7 @@ import { nitro } from 'nitro/vite'
 // Vercel sets VERCEL=1 during builds; everywhere else (local dev, Cloudflare's
 // `wrangler deploy` build) targets Cloudflare Workers via wrangler.jsonc.
 const deployPlugin = process.env.VERCEL
-  ? nitro({ config: { preset: 'vercel' } })
+  ? nitro({ preset: 'vercel' })
   : cloudflare({ viteEnvironment: { name: 'ssr' } })
 
 const config = defineConfig({
